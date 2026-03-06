@@ -35,3 +35,5 @@ Role: user
 ```
 # mysql -u cis_user -pSenhaForte123! cis_dashboard < cis_dashboard.sql
 ```
+
+Sistema desenvolvido por para uso inerno e não comercial. Fique a vontade para utilizar, aprimorar, distribuir e cobrar por ele.
