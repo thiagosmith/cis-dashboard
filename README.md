@@ -33,6 +33,21 @@ Role: user
 - Crie o usuário e defina sua senha;
 - Importe as tabelas para a base de dados a partir do arquivo cis_dashboard.sql
 ```
+Atualização do Linux:
+# apt update
+# apt upgrade -y
+
+Instalação e restart do Apache2:
+# apt install apache2 -y
+# systemctl restart apache2
+
+Instalação do PHP:
+# apt install php libapache2-mod-php php-mysql php-cli php-curl php-gd php-mbstring php-xml php-zip -y
+
+Instalação do MariaDB (MySQL):
+# apt install mysql-server -y
+
+Proviisonamento do banco de dados:
 # mysql -u root
 MariaDB [(none)]> CREATE DATABASE minha_base;
 CREATE USER 'cis_user'@'localhost' IDENTIFIED BY 'SenhaForte123!';
