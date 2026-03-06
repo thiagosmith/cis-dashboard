@@ -33,6 +33,12 @@ Role: user
 - Crie o usuário e defina sua senha;
 - Importe as tabelas para a base de dados a partir do arquivo cis_dashboard.sql
 ```
+# mysql -u root
+MariaDB [(none)]> CREATE DATABASE minha_base;
+CREATE USER 'cis_user'@'localhost' IDENTIFIED BY 'SenhaForte123!';
+MariaDB [(none)]> GRANT ALL PRIVILEGES ON cis_dashboard.* TO 'cis_user'@'localhost';
+MariaDB [(none)]> FLUSH PRIVILEGES;
+MariaDB [(none)]> EXIT
 # mysql -u cis_user -pSenhaForte123! cis_dashboard < cis_dashboard.sql
 ```
 
