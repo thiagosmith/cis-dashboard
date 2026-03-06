@@ -1,0 +1,117 @@
+<?php
+session_start();
+include "db.php";
+
+if($_SERVER["REQUEST_METHOD"]=="POST"){
+
+$user=$_POST['username'];
+$pass=$_POST['password'];
+
+$stmt=$conn->prepare("SELECT * FROM users WHERE username=?");
+$stmt->bind_param("s",$user);
+$stmt->execute();
+$result=$stmt->get_result();
+
+if($row=$result->fetch_assoc()){
+
+if(password_verify($pass,$row['password'])){
+
+$_SESSION['user']=$row['username'];
+$_SESSION['role']=$row['role'];
+
+header("Location: dashboard.php");
+exit();
+
+}
+
+}
+
+$error="Usuário ou senha inválidos";
+
+}
+?>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Login - CIS Dashboard</title>
+
+<link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+<style>
+
+body{
+background:black;
+color:#00ff9f;
+font-family:monospace;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+.card{
+background:#111;
+border:1px solid #00ff9f;
+}
+
+input{
+background:black;
+color:#00ff9f !important;
+border:1px solid #00ff9f !important;
+}
+
+.btn-hacker{
+background:black;
+color:#00ff9f;
+border:1px solid #00ff9f;
+}
+
+.btn-hacker:hover{
+background:#00ff9f;
+color:black;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="card p-4" style="width:350px">
+
+<h3 class="text-center">CIS Security Login</h3>
+
+<?php if(isset($error)){ ?>
+
+<div class="alert alert-danger">
+<?php echo $error; ?>
+</div>
+
+<?php } ?>
+
+<form method="post">
+
+<div class="mb-3">
+<label>Usuário</label>
+<input type="text" name="username" class="form-control">
+</div>
+
+<div class="mb-3">
+<label>Senha</label>
+<input type="password" name="password" class="form-control">
+</div>
+
+<button class="btn btn-hacker w-100">
+Entrar
+</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
