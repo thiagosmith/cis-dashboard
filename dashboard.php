@@ -90,7 +90,12 @@ body {
     color: #00ff9f;
     margin: 0;
 }
-
+.footer {
+    border-top: 1px solid #00ff9f;
+    color: #00ff9f;
+    font-family: monospace;
+    background: #000;
+}
 
 </style>
 </head>
@@ -200,4 +205,7 @@ new Chart(ctx, {
 });
 </script>
 </body>
+<footer class="footer mt-5 p-3 text-center">
+    <small>Copyright @ 2025 Smith Braz | 5M1TH</small>
+</footer>
 </html>
