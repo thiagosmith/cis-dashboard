@@ -206,6 +206,6 @@ new Chart(ctx, {
 </script>
 </body>
 <footer class="footer mt-5 p-3 text-center">
-    <small>Copyright @ 2025 Smith Braz | 5M1TH</small>
+    <small>Copyright @ 2025 Smith Braz | https://github.com/thiagosmith/cis-dashboard | 5M1TH</small>
 </footer>
 </html>
