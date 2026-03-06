@@ -27,6 +27,7 @@ Role: user
 
 ## Instalação:
 - Instale o Linux;
+- Clone o repositório;
 - Instale o PHP;
 - Instale o MySQL;
 - Crie a base de dados;
@@ -36,6 +37,10 @@ Role: user
 Atualização do Linux:
 # apt update
 # apt upgrade -y
+
+Clonagem do repositório:
+# cd /var/www/html
+# git clone https://github.com/thiagosmith/cis-dashboard.git
 
 Instalação e restart do Apache2:
 # apt install apache2 -y
@@ -54,6 +59,7 @@ CREATE USER 'cis_user'@'localhost' IDENTIFIED BY 'SenhaForte123!';
 MariaDB [(none)]> GRANT ALL PRIVILEGES ON cis_dashboard.* TO 'cis_user'@'localhost';
 MariaDB [(none)]> FLUSH PRIVILEGES;
 MariaDB [(none)]> EXIT
+# cd cis-dashboard
 # mysql -u cis_user -pSenhaForte123! cis_dashboard < cis_dashboard.sql
 ```
 
