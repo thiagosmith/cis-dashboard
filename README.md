@@ -52,7 +52,7 @@ Instalação do PHP:
 Instalação do MariaDB (MySQL):
 # apt install mysql-server -y
 
-Proviisonamento do banco de dados:
+Provisonamento do banco de dados:
 # mysql -u root
 MariaDB [(none)]> CREATE DATABASE minha_base;
 CREATE USER 'cis_user'@'localhost' IDENTIFIED BY 'SenhaForte123!';
