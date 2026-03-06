@@ -47,7 +47,7 @@ $error = "Usuário não encontrado";
 
 <head>
 
-<title>CIS Controls AC Security Dashboard - Login</title>
+<title>CIS Controls Security Dashboard - Login</title>
 
 <link rel="stylesheet"
 href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
