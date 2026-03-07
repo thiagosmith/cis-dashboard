@@ -90,7 +90,7 @@ color:#000;
 
 <div class="card">
 
-<h3 class="text-center mb-4">CIS Controls AC Security Dashboard</h3>
+<h3 class="text-center mb-4">CIS Controls Security Dashboard</h3>
 
 <form method="POST">
 
