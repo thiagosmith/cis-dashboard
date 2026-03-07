@@ -40,6 +40,7 @@ Atualização do Linux:
 
 Clonagem do repositório:
 # cd /var/www/html
+# apt install git -y
 # git clone https://github.com/thiagosmith/cis-dashboard.git
 
 Instalação e restart do Apache2:
