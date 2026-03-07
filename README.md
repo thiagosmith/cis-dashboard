@@ -1,6 +1,6 @@
 # CIS Controls Security Dashboard
 Dashboard de dados CIS Benchmarks
-Objetivo é receber os dados de avaliação de segurança CIS e concentrar em um sistema capaz de acomapnhar a evolução do ambiente por meio de dados tratados e dashboards visuais.
+Objetivo é receber os dados de avaliação de segurança CIS e concentrar em um sistema capaz de acompanhar a evolução do ambiente por meio de dados tratados e dashboards visuais.
 
 ![CIS](./img/1.png)
 
