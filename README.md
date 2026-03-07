@@ -45,7 +45,7 @@ Role: user
 - Instale o MySQL;
 - Crie a base de dados;
 - Crie o usuário e defina sua senha;
-- Importe as tabelas para a base de dados a partir do arquivo cis_dashboard.sql
+- Importe as tabelas para a base de dados a partir do arquivo `cis_dashboard.sql`
 ```
 Atualização do Linux:
 # apt update
