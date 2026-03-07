@@ -56,7 +56,7 @@ Instalação do MariaDB (MySQL):
 Provisonamento do banco de dados:
 # mysql -u root
 MariaDB [(none)]> CREATE DATABASE cis_dashboard;
-CREATE USER 'cis_user'@'localhost' IDENTIFIED BY 'SenhaForte123!';
+MariaDB [(none)]> CREATE USER 'cis_user'@'localhost' IDENTIFIED BY 'SenhaForte123!';
 MariaDB [(none)]> GRANT ALL PRIVILEGES ON cis_dashboard.* TO 'cis_user'@'localhost';
 MariaDB [(none)]> FLUSH PRIVILEGES;
 MariaDB [(none)]> EXIT
