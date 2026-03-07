@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  cis-dashboard:
+    image: smithbraz/cis-dashboard:1.0
+    container_name: cis-dashboard
+    ports:
+      - "8080:80"
+    restart: always
+    command: >
+      bash -c "service mariadb start && apachectl -D FOREGROUND"
+
