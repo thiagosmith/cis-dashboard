@@ -25,7 +25,7 @@ Pass: smith
 Role: user
 ```
 
-## Instalação:
+## Instalação na unha:
 - Instale o Linux;
 - Clone o repositório;
 - Instale o PHP;
@@ -65,5 +65,17 @@ MariaDB [(none)]> EXIT
 Reinicialização do Apache2:
 # systemctl restart apache2
 ```
+
+## Instalação via docker:
+
+```
+# wget https://raw.githubusercontent.com/thiagosmith/cis-dashboard/refs/heads/main/docker-compose.yml
+# apt install docker.io -y
+# apt install docker-compose -y
+# systemctl start docker
+# docker-compose up
+```
+http://localhost:8080
+
 
 Sistema desenvolvido por para uso inerno e não comercial. Fique a vontade para utilizar, aprimorar, distribuir e cobrar por ele.
