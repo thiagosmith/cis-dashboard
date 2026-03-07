@@ -1,5 +1,13 @@
 # CIS Controls Security Dashboard
-Dashboard de dados CIS Benchmarks
+O CIS (Center for Internet Security) é uma organização sem fins lucrativos que desenvolve os CIS Controls, um conjunto de práticas de segurança cibernética reconhecido mundialmente. Esses controles oferecem um guia estruturado e priorizado para reduzir riscos digitais e fortalecer a postura de segurança das empresas.
+
+Acompanhar esses controles em dashboards é fundamental porque eles transformam dados técnicos em informação visual clara e acionável. Isso ajuda tanto na gestão operacional quanto na tomada de decisão estratégica.
+
+Pensando nisso desenvolvi um sistema web que roda em PHP para receber e corelacionar as informação de forma bem simples, mas eficiente e com o objetivo de diminuir a carga de trabalho e automatizar processos.
+
+"Dashboards são como o painel de um carro — você não precisa abrir o motor para saber se há problema, basta olhar os indicadores. Eles tornam a segurança mais visual, rápida e estratégica.
+
+## Dashboard de dados CIS Benchmarks
 Objetivo é receber os dados de avaliação de segurança CIS e concentrar em um sistema capaz de acompanhar a evolução do ambiente por meio de dados tratados e dashboards visuais.
 
 ![CIS](./img/1.png)
