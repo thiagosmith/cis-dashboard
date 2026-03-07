@@ -78,7 +78,31 @@ Reinicialização do Apache2:
 # systemctl start docker
 # docker-compose up
 ```
+## Acesso: 
 http://localhost:8080
+
+## CIS Controls Security Dashboard
+
+![CIS](./img/1.png)
+
+## Gerenciamento de Hosts / Hosts Críticos / Top Security Risk
+
+![CIS](./img/2.png)
+
+## Distribuição de Risco do Ambiente
+
+![CIS](./img/3.png)
+
+## Evolução da Segurança do Ambiente / Últimas Avaliações de Segurança
+
+![CIS](./img/4.png)
+
+## CIS Compliance Benchmark
+
+![CIS](./img/5.png)
+
+
+
 
 
 Sistema desenvolvido por para uso inerno e não comercial. Fique a vontade para utilizar, aprimorar, distribuir e cobrar por ele.
