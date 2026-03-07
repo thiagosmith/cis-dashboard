@@ -50,7 +50,7 @@ Instalação do PHP:
 # apt install php libapache2-mod-php php-mysql php-cli php-curl php-gd php-mbstring php-xml php-zip -y
 
 Instalação do MariaDB (MySQL):
-# apt install mysql-server -y
+# apt install mariadb-server -y
 
 Provisonamento do banco de dados:
 # mysql -u root
