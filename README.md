@@ -43,9 +43,8 @@ Clonagem do repositório:
 # apt install git -y
 # git clone https://github.com/thiagosmith/cis-dashboard.git
 
-Instalação e restart do Apache2:
+Instalação do Apache2:
 # apt install apache2 -y
-# systemctl restart apache2
 
 Instalação do PHP:
 # apt install php libapache2-mod-php php-mysql php-cli php-curl php-gd php-mbstring php-xml php-zip -y
@@ -62,6 +61,9 @@ MariaDB [(none)]> FLUSH PRIVILEGES;
 MariaDB [(none)]> EXIT
 # cd cis-dashboard
 # mysql -u cis_user -pSenhaForte123! cis_dashboard < cis_dashboard.sql
+
+Reinicialização do Apache2:
+# systemctl restart apache2
 ```
 
 Sistema desenvolvido por para uso inerno e não comercial. Fique a vontade para utilizar, aprimorar, distribuir e cobrar por ele.
