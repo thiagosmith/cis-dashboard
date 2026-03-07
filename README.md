@@ -2,6 +2,9 @@
 Dashboard de dados CIS Benchmarks
 Objetivo é receber os dados de avaliação de segurança CIS e concentrar em um sistema capaz de acomapnhar a evolução do ambiente por meio de dados tratados e dashboards visuais.
 
+![CIS](./img/01.png)
+
+
 ## Testado em ambiente Linux 
 - Debian 13;
 - Apache 2.4.66;
